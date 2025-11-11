@@ -187,9 +187,9 @@ void test_1_mma_64x64_mask(uint32_t top_mem_base, uint32_t left_mem_base, uint32
     const size_t left_bytes = 256;
     const size_t result_elems = 64 * 64;
 
-    for (size_t i = 0; i < result_elems; ++i) {
-        acc_out[i] = 0;
-    }
+    // for (size_t i = 0; i < result_elems; ++i) {
+    //     acc_out[i] = 0;
+    // }
     
     // Configure Top Reg CSRs
     uint32_t top_ttype = 0x0841;
@@ -272,9 +272,9 @@ void test_1_mma_128x32_mask(uint32_t top_mem_base, uint32_t left_mem_base,
     const size_t left_bytes = 512;
     const size_t result_elems = 128 * 32;
 
-    for (size_t i = 0; i < result_elems; ++i) {
-        acc_out[i] = 0;
-    }
+    // for (size_t i = 0; i < result_elems; ++i) {
+    //     acc_out[i] = 0;
+    // }
     
     // Configure Top Reg CSRs
     uint32_t top_ttype = 0x0841;
