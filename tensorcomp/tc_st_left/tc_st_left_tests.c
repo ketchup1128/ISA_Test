@@ -167,7 +167,7 @@ int main(void) {
     // - 0x40010000: acc_buffer for test 1 (64x64 = 16KB)
     // - 0x40020000: acc_buffer for test 2 (128x32 = 16KB)
     
-    uint32_t left_mem_base = 0x40000000;
+    uint32_t left_mem_base = 0x4000000;
     uint32_t acc_buffer = 0x40020000;
     
     // Run tests
