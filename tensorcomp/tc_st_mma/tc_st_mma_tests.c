@@ -41,16 +41,50 @@
 // ============================================================================
 // CSR Address Definitions
 // ============================================================================
+// ### Left Reg CSRs (Updated 2025-10-21)
+// | 地址范围    | 名称                    | 说明                          |
+// |-------------|-------------------------|-------------------------------|
+// | 0x800       | left_ttype              | 元素类型和数量配置            |
+// | 0x801       | left_tmask_ld           | Load 掩码 (32-bit)            |
+// | 0x802       | left_tmask_st           | Store 掩码 (32-bit)           |
+// | 0x803       | left_twidth_ld          | Load 宽度                     |
+// | 0x804       | left_twidth_st          | Store 宽度                    |
+// | 0x820-0x83F | left_tstride_ld[0:31]   | Load stride 寄存器 (32个)     |
+// | 0x840-0x85F | left_tstride_st[0:31]   | Store stride 寄存器 (32个)    |
+
+// ### Top Reg CSRs (Updated 2025-10-21)
+// | 地址范围    | 名称                    | 说明                          |
+// |-------------|-------------------------|-------------------------------|
+// | 0x860       | top_ttype               | 元素类型和数量配置            |
+// | 0x861       | top_tmask_ld            | Load 掩码 (32-bit)            |
+// | 0x862       | top_tmask_st            | Store 掩码 (32-bit)           |
+// | 0x863       | top_twidth_ld           | Load 宽度                     |
+// | 0x864       | top_twidth_st           | Store 宽度                    |
+// | 0x880-0x89F | top_tstride_ld[0:31]    | Load stride 寄存器 (32个)     |
+// | 0x8A0-0x8BF | top_tstride_st[0:31]    | Store stride 寄存器 (32个)    |
+
+// ### Sparse Reg CSRs
+// | 地址范围    | 名称                    | 说明                          |
+// |-------------|-------------------------|-------------------------------|
+// | 0x8C0       | spa_ttype               | 元素类型和数量配置            |
+// | 0x8C1       | spa_tmask_ld            | Load 掩码 (32-bit)            |
+// | 0x8C2       | spa_tmask_st            | Store 掩码 (32-bit)           |
+// | 0x8C3       | spa_twidth_ld           | Load 宽度                     |
+// | 0x8C4       | spa_twidth_st           | Store 宽度                    |
+// | 0x8E0-0x8FF | spa_tstride_ld[0:31]    | Load stride 寄存器 (32个)     |
+// | 0x900-0x91F | spa_tstride_st[0:31]    | Store stride 寄存器 (32个)    |
 
 // Top Reg CSRs
 #define CSR_TOP_TTYPE           0x860
 #define CSR_TOP_TMASK_LD        0x861
+#define CSR_TOP_TMASK_ST        0x862
 #define CSR_TOP_TWIDTH_LD       0x863
 #define CSR_TOP_TSTRIDE_LD_BASE 0x880
 
 // Left Reg CSRs
 #define CSR_LEFT_TTYPE          0x800
 #define CSR_LEFT_TMASK_LD       0x801
+#define CSR_LEFT_TMASK_ST       0x802
 #define CSR_LEFT_TWIDTH_LD      0x803
 #define CSR_LEFT_TSTRIDE_LD_BASE 0x820
 
@@ -199,6 +233,7 @@ void test_1_mma_64x64_mask(uint32_t top_mem_base, uint32_t left_mem_base, uint32
     CSR_WRITE(CSR_TOP_TTYPE, top_ttype);
     CSR_WRITE(CSR_TOP_TMASK_LD, top_tmask_ld);
     CSR_WRITE(CSR_TOP_TWIDTH_LD, top_twidth_ld);
+    CSR_WRITE(CSR_TOP_TMASK_ST, top_tmask_ld);
 
     uint32_t top_strides[8] = {
         0x000, 0x0100, 0x200, 0x300,
@@ -218,6 +253,7 @@ void test_1_mma_64x64_mask(uint32_t top_mem_base, uint32_t left_mem_base, uint32
     CSR_WRITE(CSR_LEFT_TTYPE, left_ttype);
     CSR_WRITE(CSR_LEFT_TMASK_LD, left_tmask_ld);
     CSR_WRITE(CSR_LEFT_TWIDTH_LD, left_twidth_ld);
+    CSR_WRITE(CSR_LEFT_TMASK_ST, left_tmask_ld);
 
     uint32_t left_strides[8] = {
         0x000, 0x0100, 0x200, 0x300,
@@ -283,6 +319,7 @@ void test_1_mma_128x32_mask(uint32_t top_mem_base, uint32_t left_mem_base,
     
     CSR_WRITE(CSR_TOP_TTYPE, top_ttype);
     CSR_WRITE(CSR_TOP_TMASK_LD, top_tmask_ld);
+    CSR_WRITE(CSR_TOP_TMASK_ST, top_tmask_ld);
     CSR_WRITE(CSR_TOP_TWIDTH_LD, top_twidth_ld);
     // CSR_WRITE(CSR_TOP_TSTRIDE_LD_BASE + 0, 0);
     
@@ -303,6 +340,7 @@ void test_1_mma_128x32_mask(uint32_t top_mem_base, uint32_t left_mem_base,
     
     CSR_WRITE(CSR_LEFT_TTYPE, left_ttype);
     CSR_WRITE(CSR_LEFT_TMASK_LD, left_tmask_ld);
+    CSR_WRITE(CSR_LEFT_TMASK_ST, left_tmask_ld);
     CSR_WRITE(CSR_LEFT_TWIDTH_LD, left_twidth_ld);
     // CSR_WRITE(CSR_LEFT_TSTRIDE_LD_BASE + 0, 0);
 
