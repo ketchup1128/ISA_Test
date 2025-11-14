@@ -80,6 +80,7 @@
 #define CSR_TOP_TMASK_ST        0x862
 #define CSR_TOP_TWIDTH_LD       0x863
 #define CSR_TOP_TSTRIDE_LD_BASE 0x880
+#define CSR_TOP_TSTRIDE_ST_BASE 0x8A0
 
 // Left Reg CSRs
 #define CSR_LEFT_TTYPE          0x800
@@ -87,6 +88,7 @@
 #define CSR_LEFT_TMASK_ST       0x802
 #define CSR_LEFT_TWIDTH_LD      0x803
 #define CSR_LEFT_TSTRIDE_LD_BASE 0x820
+#define CSR_LEFT_TSTRIDE_ST_BASE 0x840
 
 // ============================================================================
 // Inline Assembly Helpers
@@ -243,6 +245,7 @@ void test_1_mma_64x64_mask(uint32_t top_mem_base, uint32_t left_mem_base, uint32
 
     for (int i = 0; i < 8; i++) {
         CSR_WRITE(CSR_TOP_TSTRIDE_LD_BASE + i, top_strides[i]);
+        CSR_WRITE(CSR_TOP_TSTRIDE_ST_BASE + i, 0);
     }
     
     // Configure Left Reg CSRs
@@ -262,6 +265,7 @@ void test_1_mma_64x64_mask(uint32_t top_mem_base, uint32_t left_mem_base, uint32
 
     for (int i = 0; i < 8; i++) {
         CSR_WRITE(CSR_LEFT_TSTRIDE_LD_BASE + i, left_strides[i]);
+        CSR_WRITE(CSR_LEFT_TSTRIDE_ST_BASE + i, 0);
     }
     
     printf("  Loading data to Top Reg from 0x%08X...\n", top_mem_base);
@@ -331,6 +335,7 @@ void test_1_mma_128x32_mask(uint32_t top_mem_base, uint32_t left_mem_base,
 
     for (int i = 0; i < 8; i++) {
         CSR_WRITE(CSR_TOP_TSTRIDE_LD_BASE + i, top_strides[i]);
+        CSR_WRITE(CSR_TOP_TSTRIDE_ST_BASE + i, 0);
     }
 
     // Configure Left Reg CSRs
@@ -352,6 +357,7 @@ void test_1_mma_128x32_mask(uint32_t top_mem_base, uint32_t left_mem_base,
 
     for (int i = 0; i < 8; i++) {
         CSR_WRITE(CSR_LEFT_TSTRIDE_LD_BASE + i, left_strides[i]);
+        CSR_WRITE(CSR_LEFT_TSTRIDE_ST_BASE + i, 0);
     }
     
     printf("  Loading data to Top Reg from 0x%08X...\n", top_mem_base);
