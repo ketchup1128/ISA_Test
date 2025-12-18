@@ -34,6 +34,7 @@ void load_tc_registers(void) {
     // Configure standard offsets (0, 128, 256, 384, 512, 640, 768, 896)
     configure_standard_ld_offsets();
     
+    
     // Load trs1_data into tr0 (Left Data - 4x mode)
     uint32_t addr_trs1 = L1M_BASE_ADDR;
     PRINT("Loading trs1_data (0x%08X) into tr0\n", addr_trs1);
@@ -45,6 +46,21 @@ void load_tc_registers(void) {
     T_LD(1, 0, addr_trs2);
     
     PRINT("--- TC registers loaded ---\n\n");
+}
+
+
+void initialize_acc_buffer(uint32_t acc_addr) {
+    PRINT("Initialize acc_buffer\n");
+    uint32_t acc_buf_addr = acc_addr;
+    uint32_t rs2_config = MAKE_RS2(0, 0, 0);  // startpoints all at 0
+
+    PRINT("Initialize acc_buffer\n");
+    uint32_t dummy = 0;
+    // t.imm.broadcast t0, 0x00(x0)
+    T_IMM_BROADCAST(0, 0x00, dummy);
+    T_IMM_BROADCAST(1, 0x00, dummy);
+
+    TC_ST_ADD(acc_buf_addr, 0, 1, rs2_config);
 }
 
 // ============================================================================
@@ -89,6 +105,7 @@ int main(void) {
     PRINT("\nInstruction: tc.st.mma.acc - Matrix Multiply-Accumulate\n");
     PRINT("Configuration: Normal Mode, Left 4x, Top 1x\n");
     
+    initialize_acc_buffer(ACC_BUFFER_ADDR);
     // Load data into TC registers
     load_tc_registers();
     
