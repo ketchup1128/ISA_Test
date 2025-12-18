@@ -52,20 +52,6 @@ void load_tc_registers(void) {
     PRINT("--- TC registers loaded ---\n\n");
 }
 
-void initialize_acc_buffer(uint32_t acc_addr) {
-    PRINT("Initialize acc_buffer\n");
-    uint32_t acc_buf_addr = acc_addr;
-    uint32_t rs2_config = MAKE_RS2(0, 0, 0);  // startpoints all at 0
-
-    PRINT("Initialize acc_buffer\n");
-    uint32_t dummy = 0;
-    // t.imm.broadcast t0, 0x00(x0)
-    T_IMM_BROADCAST(0, 0x00, dummy);
-    T_IMM_BROADCAST(1, 0x00, dummy);
-
-    TC_ST_ADD(acc_buf_addr, 0, 1, rs2_config);
-}
-
 // ============================================================================
 // Test 3: Sparse Mode
 // ============================================================================
@@ -115,6 +101,7 @@ void test_3_sparse_mode(void) {
     T_MERGE_128B(5, 1, 4, config);
     
     // tc.st.mma.acc acc_addr, t0, t5, rs2_config
+    TC_ST_CLEAN(acc_addr);
     TC_ST_MMA_ACC(acc_addr, 0, 5, rs2_config_spa);
     
     PRINT("Test 3 completed\n");
@@ -130,7 +117,6 @@ int main(void) {
     PRINT("\nInstruction: tc.st.mma.acc - Matrix Multiply-Accumulate\n");
     PRINT("Configuration: Sparse Mode (4:2 structured sparsity)\n");
 
-    initialize_acc_buffer(ACC_BUFFER_ADDR);
     
     // Load data into TC registers
     load_tc_registers();

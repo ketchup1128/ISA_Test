@@ -48,21 +48,6 @@ void load_tc_registers(void) {
     PRINT("--- TC registers loaded ---\n\n");
 }
 
-
-void initialize_acc_buffer(uint32_t acc_addr) {
-    PRINT("Initialize acc_buffer\n");
-    uint32_t acc_buf_addr = acc_addr;
-    uint32_t rs2_config = MAKE_RS2(0, 0, 0);  // startpoints all at 0
-
-    PRINT("Initialize acc_buffer\n");
-    uint32_t dummy = 0;
-    // t.imm.broadcast t0, 0x00(x0)
-    T_IMM_BROADCAST(0, 0x00, dummy);
-    T_IMM_BROADCAST(1, 0x00, dummy);
-
-    TC_ST_ADD(acc_buf_addr, 0, 1, rs2_config);
-}
-
 // ============================================================================
 // Test 1: Normal Mode (M2=4, N2=1)
 // ============================================================================
@@ -88,7 +73,7 @@ void test_1_normal_mode_4x1(void) {
     PRINT("twidth: 128, tlength: 0x%08X\n", MAKE_TLENGTH(4, 1, 0));
     PRINT("acc_addr: 0x%08X\n", acc_addr);
     PRINT("rs2_config: 0x%08X\n", rs2_config);
-    
+    TC_ST_CLEAN(acc_addr);
     // tc.st.mma.acc acc_addr, t0, t1, rs2_config
     TC_ST_MMA_ACC(acc_addr, 0, 1, rs2_config);
     
@@ -105,7 +90,6 @@ int main(void) {
     PRINT("\nInstruction: tc.st.mma.acc - Matrix Multiply-Accumulate\n");
     PRINT("Configuration: Normal Mode, Left 4x, Top 1x\n");
     
-    initialize_acc_buffer(ACC_BUFFER_ADDR);
     // Load data into TC registers
     load_tc_registers();
     
