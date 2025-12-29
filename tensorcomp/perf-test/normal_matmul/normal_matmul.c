@@ -23,7 +23,7 @@ int main(void) {
     // printf("config_ptr: %p\n", config_ptr);
     // printf("config_ptr->mode: %x\n", config_ptr->mode);
     // printf("config_ptr->addr_left: %x\n", config_ptr->addr_left);
-    // printf("config_ptr->addr_top: %x\n", config_ptr->addr_top);ß
+    // printf("config_ptr->addr_top: %x\n", config_ptr->addr_top);
     // printf("config_ptr->acc_addr: %x\n", config_ptr->acc_addr);
     // printf("config_ptr->ch_loop: %x\n", config_ptr->ch_loop);
     // my name is liumin, I'm SB.
@@ -40,7 +40,7 @@ int main(void) {
     }
     
     // PRINT("\n======================================================================\n");
-    // PRINT("test completed!\n");
+    PRINT("test completed!\n");
     // PRINT("======================================================================\n");
     return 0;
 }
