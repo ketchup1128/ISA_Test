@@ -4,15 +4,15 @@
         ALL RIGHTS RESERVED
 [WARN] [CONFIG] 未找到配置文件，使用默认值
 [INFO] [RTL] RTL Test Mode: M=32 N=128 K=128 MatrixA=0x40000000 MatrixB=0x40004000 MatrixC=0x50000000
-[INFO] [ELF] kernel addr = 0x800001c4
+[INFO] [ELF] kernel addr = 0x800001b4
 [INFO] [LOAD] loaded hex '/Users/minl/Workspace/BYD/NPU/FunctionModel/gpnpu-model/deps/gpnpu-tensor-model/sw/kernels/tensorcomp/test_case/M32N128K128/M32K128.hex' at 0x40000000 (4096 bytes)
 [INFO] [LOAD] loaded hex '/Users/minl/Workspace/BYD/NPU/FunctionModel/gpnpu-model/deps/gpnpu-tensor-model/sw/kernels/tensorcomp/test_case/M32N128K128/K128N128.hex' at 0x40004000 (16384 bytes)
-[INFO] [CMD_FIFO] initialized at 0xa0000000 kernel=0x800001c4 param=0xa0000100
+[INFO] [CMD_FIFO] initialized at 0xa0000000 kernel=0x800001b4 param=0xa0000100
 [INFO] [PARAM] matmul params at 0xa0000100 MK=0x40000000 KN=0x40004000 out=0x50000000 layout=1 mn_mode=0 K=128
 [INFO] [DUMP] dumped 512 bytes to '/Users/minl/Workspace/BYD/NPU/FunctionModel/gpnpu-model/deps/gpnpu-tensor-model/sw/kernels/tensorcomp/test_case_rtl/build/dtcm_rt.hex'
 [INFO] [INIT] PC=0x80000000 SP=0xa000f000 (firmware entry)
-[INFO] [DONE] ENGINE_DONE received at cycle 230
-PASS PC=0x800001a4 cycles=232 instret=232
+[INFO] [DONE] ENGINE_DONE received at cycle 228
+PASS PC=0x80000194 cycles=230 instret=230
 [INFO] [DUMP] dumped 16384 bytes to '/Users/minl/Workspace/BYD/NPU/FunctionModel/gpnpu-model/deps/gpnpu-tensor-model/sw/kernels/tensorcomp/test_case_rtl/build/kernel_out.hex'
 [INFO] [REF] Running reference model: M=32 N=128 K=128 layout=n128m32
 [ref] Running M32N128-n128m32 reference model
