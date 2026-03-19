@@ -178,54 +178,54 @@ Disassembly of section .text:
 8000027c: 0016005b     	t.ld	tr1, 0x0(a2)
 80000280: 02e680db     	tc.st.mma.acc	a3, tr1, tr0, a4
 80000284: 02f680db     	tc.st.mma.acc	a3, tr1, tr0, a5
-80000288: 002600db     	t.ld	tr2, 0x1(a2)
-8000028c: 0306815b     	tc.st.mma.acc	a3, tr2, tr0, a6
-80000290: 0316815b     	tc.st.mma.acc	a3, tr2, tr0, a7
-80000294: 0036015b     	t.ld	tr3, 0x2(a2)
-80000298: 025681db     	tc.st.mma.acc	a3, tr3, tr0, t0
-8000029c: 026681db     	tc.st.mma.acc	a3, tr3, tr0, t1
-800002a0: 004601db     	t.ld	tr4, 0x3(a2)
-800002a4: 0276825b     	tc.st.mma.acc	a3, tr4, tr0, t2
-800002a8: 03c6825b     	tc.st.mma.acc	a3, tr4, tr0, t3
-800002ac: 005580db     	t.ld	tr5, 0x1(a1)
-800002b0: 0066025b     	t.ld	tr6, 0x4(a2)
-800002b4: 2ae6835b     	tc.st.mma.acc	a3, tr6, tr5, a4
-800002b8: 2af6835b     	tc.st.mma.acc	a3, tr6, tr5, a5
-800002bc: 007602db     	t.ld	tr7, 0x5(a2)
-800002c0: 2b0683db     	tc.st.mma.acc	a3, tr7, tr5, a6
-800002c4: 2b1683db     	tc.st.mma.acc	a3, tr7, tr5, a7
-800002c8: 0086035b     	t.ld	tr8, 0x6(a2)
-800002cc: 2a56845b     	tc.st.mma.acc	a3, tr8, tr5, t0
-800002d0: 2a66845b     	tc.st.mma.acc	a3, tr8, tr5, t1
-800002d4: 009603db     	t.ld	tr9, 0x7(a2)
-800002d8: 2a7684db     	tc.st.mma.acc	a3, tr9, tr5, t2
-800002dc: 2bc684db     	tc.st.mma.acc	a3, tr9, tr5, t3
+80000288: 001600db     	t.ld	tr1, 0x1(a2)
+8000028c: 030680db     	tc.st.mma.acc	a3, tr1, tr0, a6
+80000290: 031680db     	tc.st.mma.acc	a3, tr1, tr0, a7
+80000294: 0016015b     	t.ld	tr1, 0x2(a2)
+80000298: 025680db     	tc.st.mma.acc	a3, tr1, tr0, t0
+8000029c: 026680db     	tc.st.mma.acc	a3, tr1, tr0, t1
+800002a0: 001601db     	t.ld	tr1, 0x3(a2)
+800002a4: 027680db     	tc.st.mma.acc	a3, tr1, tr0, t2
+800002a8: 03c680db     	tc.st.mma.acc	a3, tr1, tr0, t3
+800002ac: 000580db     	t.ld	tr0, 0x1(a1)
+800002b0: 0016025b     	t.ld	tr1, 0x4(a2)
+800002b4: 02e680db     	tc.st.mma.acc	a3, tr1, tr0, a4
+800002b8: 02f680db     	tc.st.mma.acc	a3, tr1, tr0, a5
+800002bc: 001602db     	t.ld	tr1, 0x5(a2)
+800002c0: 030680db     	tc.st.mma.acc	a3, tr1, tr0, a6
+800002c4: 031680db     	tc.st.mma.acc	a3, tr1, tr0, a7
+800002c8: 0016035b     	t.ld	tr1, 0x6(a2)
+800002cc: 025680db     	tc.st.mma.acc	a3, tr1, tr0, t0
+800002d0: 026680db     	tc.st.mma.acc	a3, tr1, tr0, t1
+800002d4: 001603db     	t.ld	tr1, 0x7(a2)
+800002d8: 027680db     	tc.st.mma.acc	a3, tr1, tr0, t2
+800002dc: 03c680db     	tc.st.mma.acc	a3, tr1, tr0, t3
 800002e0: 0005815b     	t.ld	tr0, 0x2(a1)
 800002e4: 0016045b     	t.ld	tr1, 0x8(a2)
 800002e8: 02e680db     	tc.st.mma.acc	a3, tr1, tr0, a4
 800002ec: 02f680db     	tc.st.mma.acc	a3, tr1, tr0, a5
-800002f0: 002604db     	t.ld	tr2, 0x9(a2)
-800002f4: 0306815b     	tc.st.mma.acc	a3, tr2, tr0, a6
-800002f8: 0316815b     	tc.st.mma.acc	a3, tr2, tr0, a7
-800002fc: 0036055b     	t.ld	tr3, 0xa(a2)
-80000300: 025681db     	tc.st.mma.acc	a3, tr3, tr0, t0
-80000304: 026681db     	tc.st.mma.acc	a3, tr3, tr0, t1
-80000308: 004605db     	t.ld	tr4, 0xb(a2)
-8000030c: 0276825b     	tc.st.mma.acc	a3, tr4, tr0, t2
-80000310: 03c6825b     	tc.st.mma.acc	a3, tr4, tr0, t3
-80000314: 005581db     	t.ld	tr5, 0x3(a1)
-80000318: 0066065b     	t.ld	tr6, 0xc(a2)
-8000031c: 2ae6835b     	tc.st.mma.acc	a3, tr6, tr5, a4
-80000320: 2af6835b     	tc.st.mma.acc	a3, tr6, tr5, a5
-80000324: 007606db     	t.ld	tr7, 0xd(a2)
-80000328: 2b0683db     	tc.st.mma.acc	a3, tr7, tr5, a6
-8000032c: 2b1683db     	tc.st.mma.acc	a3, tr7, tr5, a7
-80000330: 0086075b     	t.ld	tr8, 0xe(a2)
-80000334: 2a56845b     	tc.st.mma.acc	a3, tr8, tr5, t0
-80000338: 2a66845b     	tc.st.mma.acc	a3, tr8, tr5, t1
-8000033c: 009607db     	t.ld	tr9, 0xf(a2)
-80000340: 2a7684db     	tc.st.mma.acc	a3, tr9, tr5, t2
-80000344: 2bc684db     	tc.st.mma.acc	a3, tr9, tr5, t3
+800002f0: 001604db     	t.ld	tr1, 0x9(a2)
+800002f4: 030680db     	tc.st.mma.acc	a3, tr1, tr0, a6
+800002f8: 031680db     	tc.st.mma.acc	a3, tr1, tr0, a7
+800002fc: 0016055b     	t.ld	tr1, 0xa(a2)
+80000300: 025680db     	tc.st.mma.acc	a3, tr1, tr0, t0
+80000304: 026680db     	tc.st.mma.acc	a3, tr1, tr0, t1
+80000308: 001605db     	t.ld	tr1, 0xb(a2)
+8000030c: 027680db     	tc.st.mma.acc	a3, tr1, tr0, t2
+80000310: 03c680db     	tc.st.mma.acc	a3, tr1, tr0, t3
+80000314: 000581db     	t.ld	tr0, 0x3(a1)
+80000318: 0016065b     	t.ld	tr1, 0xc(a2)
+8000031c: 02e680db     	tc.st.mma.acc	a3, tr1, tr0, a4
+80000320: 02f680db     	tc.st.mma.acc	a3, tr1, tr0, a5
+80000324: 001606db     	t.ld	tr1, 0xd(a2)
+80000328: 030680db     	tc.st.mma.acc	a3, tr1, tr0, a6
+8000032c: 031680db     	tc.st.mma.acc	a3, tr1, tr0, a7
+80000330: 0016075b     	t.ld	tr1, 0xe(a2)
+80000334: 025680db     	tc.st.mma.acc	a3, tr1, tr0, t0
+80000338: 026680db     	tc.st.mma.acc	a3, tr1, tr0, t1
+8000033c: 001607db     	t.ld	tr1, 0xf(a2)
+80000340: 027680db     	tc.st.mma.acc	a3, tr1, tr0, t2
+80000344: 03c680db     	tc.st.mma.acc	a3, tr1, tr0, t3
 80000348: 01d60633     	add	a2, a2, t4
 8000034c: fff50513     	addi	a0, a0, -0x1
 80000350: 01e585b3     	add	a1, a1, t5
@@ -272,48 +272,48 @@ Disassembly of section .text:
 800003f4: 0af6805b     	tc.st.mma.acc	a3, tr0, tr1, a5
 800003f8: 0b06805b     	tc.st.mma.acc	a3, tr0, tr1, a6
 800003fc: 0b16805b     	tc.st.mma.acc	a3, tr0, tr1, a7
-80000400: 002600db     	t.ld	tr2, 0x1(a2)
-80000404: 003580db     	t.ld	tr3, 0x1(a1)
-80000408: 1ae6815b     	tc.st.mma.acc	a3, tr2, tr3, a4
-8000040c: 1af6815b     	tc.st.mma.acc	a3, tr2, tr3, a5
-80000410: 1b06815b     	tc.st.mma.acc	a3, tr2, tr3, a6
-80000414: 1b16815b     	tc.st.mma.acc	a3, tr2, tr3, a7
-80000418: 0046015b     	t.ld	tr4, 0x2(a2)
-8000041c: 0055815b     	t.ld	tr5, 0x2(a1)
-80000420: 2ae6825b     	tc.st.mma.acc	a3, tr4, tr5, a4
-80000424: 2af6825b     	tc.st.mma.acc	a3, tr4, tr5, a5
-80000428: 2b06825b     	tc.st.mma.acc	a3, tr4, tr5, a6
-8000042c: 2b16825b     	tc.st.mma.acc	a3, tr4, tr5, a7
-80000430: 006601db     	t.ld	tr6, 0x3(a2)
-80000434: 007581db     	t.ld	tr7, 0x3(a1)
-80000438: 3ae6835b     	tc.st.mma.acc	a3, tr6, tr7, a4
-8000043c: 3af6835b     	tc.st.mma.acc	a3, tr6, tr7, a5
-80000440: 3b06835b     	tc.st.mma.acc	a3, tr6, tr7, a6
-80000444: 3b16835b     	tc.st.mma.acc	a3, tr6, tr7, a7
+80000400: 000600db     	t.ld	tr0, 0x1(a2)
+80000404: 001580db     	t.ld	tr1, 0x1(a1)
+80000408: 0ae6805b     	tc.st.mma.acc	a3, tr0, tr1, a4
+8000040c: 0af6805b     	tc.st.mma.acc	a3, tr0, tr1, a5
+80000410: 0b06805b     	tc.st.mma.acc	a3, tr0, tr1, a6
+80000414: 0b16805b     	tc.st.mma.acc	a3, tr0, tr1, a7
+80000418: 0006015b     	t.ld	tr0, 0x2(a2)
+8000041c: 0015815b     	t.ld	tr1, 0x2(a1)
+80000420: 0ae6805b     	tc.st.mma.acc	a3, tr0, tr1, a4
+80000424: 0af6805b     	tc.st.mma.acc	a3, tr0, tr1, a5
+80000428: 0b06805b     	tc.st.mma.acc	a3, tr0, tr1, a6
+8000042c: 0b16805b     	tc.st.mma.acc	a3, tr0, tr1, a7
+80000430: 000601db     	t.ld	tr0, 0x3(a2)
+80000434: 001581db     	t.ld	tr1, 0x3(a1)
+80000438: 0ae6805b     	tc.st.mma.acc	a3, tr0, tr1, a4
+8000043c: 0af6805b     	tc.st.mma.acc	a3, tr0, tr1, a5
+80000440: 0b06805b     	tc.st.mma.acc	a3, tr0, tr1, a6
+80000444: 0b16805b     	tc.st.mma.acc	a3, tr0, tr1, a7
 80000448: 0006025b     	t.ld	tr0, 0x4(a2)
 8000044c: 0015825b     	t.ld	tr1, 0x4(a1)
 80000450: 0ae6805b     	tc.st.mma.acc	a3, tr0, tr1, a4
 80000454: 0af6805b     	tc.st.mma.acc	a3, tr0, tr1, a5
 80000458: 0b06805b     	tc.st.mma.acc	a3, tr0, tr1, a6
 8000045c: 0b16805b     	tc.st.mma.acc	a3, tr0, tr1, a7
-80000460: 002602db     	t.ld	tr2, 0x5(a2)
-80000464: 003582db     	t.ld	tr3, 0x5(a1)
-80000468: 1ae6815b     	tc.st.mma.acc	a3, tr2, tr3, a4
-8000046c: 1af6815b     	tc.st.mma.acc	a3, tr2, tr3, a5
-80000470: 1b06815b     	tc.st.mma.acc	a3, tr2, tr3, a6
-80000474: 1b16815b     	tc.st.mma.acc	a3, tr2, tr3, a7
-80000478: 0046035b     	t.ld	tr4, 0x6(a2)
-8000047c: 0055835b     	t.ld	tr5, 0x6(a1)
-80000480: 2ae6825b     	tc.st.mma.acc	a3, tr4, tr5, a4
-80000484: 2af6825b     	tc.st.mma.acc	a3, tr4, tr5, a5
-80000488: 2b06825b     	tc.st.mma.acc	a3, tr4, tr5, a6
-8000048c: 2b16825b     	tc.st.mma.acc	a3, tr4, tr5, a7
-80000490: 006603db     	t.ld	tr6, 0x7(a2)
-80000494: 007583db     	t.ld	tr7, 0x7(a1)
-80000498: 3ae6835b     	tc.st.mma.acc	a3, tr6, tr7, a4
-8000049c: 3af6835b     	tc.st.mma.acc	a3, tr6, tr7, a5
-800004a0: 3b06835b     	tc.st.mma.acc	a3, tr6, tr7, a6
-800004a4: 3b16835b     	tc.st.mma.acc	a3, tr6, tr7, a7
+80000460: 000602db     	t.ld	tr0, 0x5(a2)
+80000464: 001582db     	t.ld	tr1, 0x5(a1)
+80000468: 0ae6805b     	tc.st.mma.acc	a3, tr0, tr1, a4
+8000046c: 0af6805b     	tc.st.mma.acc	a3, tr0, tr1, a5
+80000470: 0b06805b     	tc.st.mma.acc	a3, tr0, tr1, a6
+80000474: 0b16805b     	tc.st.mma.acc	a3, tr0, tr1, a7
+80000478: 0006035b     	t.ld	tr0, 0x6(a2)
+8000047c: 0015835b     	t.ld	tr1, 0x6(a1)
+80000480: 0ae6805b     	tc.st.mma.acc	a3, tr0, tr1, a4
+80000484: 0af6805b     	tc.st.mma.acc	a3, tr0, tr1, a5
+80000488: 0b06805b     	tc.st.mma.acc	a3, tr0, tr1, a6
+8000048c: 0b16805b     	tc.st.mma.acc	a3, tr0, tr1, a7
+80000490: 000603db     	t.ld	tr0, 0x7(a2)
+80000494: 001583db     	t.ld	tr1, 0x7(a1)
+80000498: 0ae6805b     	tc.st.mma.acc	a3, tr0, tr1, a4
+8000049c: 0af6805b     	tc.st.mma.acc	a3, tr0, tr1, a5
+800004a0: 0b06805b     	tc.st.mma.acc	a3, tr0, tr1, a6
+800004a4: 0b16805b     	tc.st.mma.acc	a3, tr0, tr1, a7
 800004a8: 00560633     	add	a2, a2, t0
 800004ac: fff50513     	addi	a0, a0, -0x1
 800004b0: 005585b3     	add	a1, a1, t0
@@ -362,54 +362,54 @@ Disassembly of section .text:
 8000055c: 0015805b     	t.ld	tr1, 0x0(a1)
 80000560: 02e680db     	tc.st.mma.acc	a3, tr1, tr0, a4
 80000564: 02f680db     	tc.st.mma.acc	a3, tr1, tr0, a5
-80000568: 002580db     	t.ld	tr2, 0x1(a1)
-8000056c: 0306815b     	tc.st.mma.acc	a3, tr2, tr0, a6
-80000570: 0316815b     	tc.st.mma.acc	a3, tr2, tr0, a7
-80000574: 0035815b     	t.ld	tr3, 0x2(a1)
-80000578: 025681db     	tc.st.mma.acc	a3, tr3, tr0, t0
-8000057c: 026681db     	tc.st.mma.acc	a3, tr3, tr0, t1
-80000580: 004581db     	t.ld	tr4, 0x3(a1)
-80000584: 0276825b     	tc.st.mma.acc	a3, tr4, tr0, t2
-80000588: 03c6825b     	tc.st.mma.acc	a3, tr4, tr0, t3
-8000058c: 005600db     	t.ld	tr5, 0x1(a2)
-80000590: 0065825b     	t.ld	tr6, 0x4(a1)
-80000594: 2ae6835b     	tc.st.mma.acc	a3, tr6, tr5, a4
-80000598: 2af6835b     	tc.st.mma.acc	a3, tr6, tr5, a5
-8000059c: 007582db     	t.ld	tr7, 0x5(a1)
-800005a0: 2b0683db     	tc.st.mma.acc	a3, tr7, tr5, a6
-800005a4: 2b1683db     	tc.st.mma.acc	a3, tr7, tr5, a7
-800005a8: 0085835b     	t.ld	tr8, 0x6(a1)
-800005ac: 2a56845b     	tc.st.mma.acc	a3, tr8, tr5, t0
-800005b0: 2a66845b     	tc.st.mma.acc	a3, tr8, tr5, t1
-800005b4: 009583db     	t.ld	tr9, 0x7(a1)
-800005b8: 2a7684db     	tc.st.mma.acc	a3, tr9, tr5, t2
-800005bc: 2bc684db     	tc.st.mma.acc	a3, tr9, tr5, t3
+80000568: 001580db     	t.ld	tr1, 0x1(a1)
+8000056c: 030680db     	tc.st.mma.acc	a3, tr1, tr0, a6
+80000570: 031680db     	tc.st.mma.acc	a3, tr1, tr0, a7
+80000574: 0015815b     	t.ld	tr1, 0x2(a1)
+80000578: 025680db     	tc.st.mma.acc	a3, tr1, tr0, t0
+8000057c: 026680db     	tc.st.mma.acc	a3, tr1, tr0, t1
+80000580: 001581db     	t.ld	tr1, 0x3(a1)
+80000584: 027680db     	tc.st.mma.acc	a3, tr1, tr0, t2
+80000588: 03c680db     	tc.st.mma.acc	a3, tr1, tr0, t3
+8000058c: 000600db     	t.ld	tr0, 0x1(a2)
+80000590: 0015825b     	t.ld	tr1, 0x4(a1)
+80000594: 02e680db     	tc.st.mma.acc	a3, tr1, tr0, a4
+80000598: 02f680db     	tc.st.mma.acc	a3, tr1, tr0, a5
+8000059c: 001582db     	t.ld	tr1, 0x5(a1)
+800005a0: 030680db     	tc.st.mma.acc	a3, tr1, tr0, a6
+800005a4: 031680db     	tc.st.mma.acc	a3, tr1, tr0, a7
+800005a8: 0015835b     	t.ld	tr1, 0x6(a1)
+800005ac: 025680db     	tc.st.mma.acc	a3, tr1, tr0, t0
+800005b0: 026680db     	tc.st.mma.acc	a3, tr1, tr0, t1
+800005b4: 001583db     	t.ld	tr1, 0x7(a1)
+800005b8: 027680db     	tc.st.mma.acc	a3, tr1, tr0, t2
+800005bc: 03c680db     	tc.st.mma.acc	a3, tr1, tr0, t3
 800005c0: 0006015b     	t.ld	tr0, 0x2(a2)
 800005c4: 0015845b     	t.ld	tr1, 0x8(a1)
 800005c8: 02e680db     	tc.st.mma.acc	a3, tr1, tr0, a4
 800005cc: 02f680db     	tc.st.mma.acc	a3, tr1, tr0, a5
-800005d0: 002584db     	t.ld	tr2, 0x9(a1)
-800005d4: 0306815b     	tc.st.mma.acc	a3, tr2, tr0, a6
-800005d8: 0316815b     	tc.st.mma.acc	a3, tr2, tr0, a7
-800005dc: 0035855b     	t.ld	tr3, 0xa(a1)
-800005e0: 025681db     	tc.st.mma.acc	a3, tr3, tr0, t0
-800005e4: 026681db     	tc.st.mma.acc	a3, tr3, tr0, t1
-800005e8: 004585db     	t.ld	tr4, 0xb(a1)
-800005ec: 0276825b     	tc.st.mma.acc	a3, tr4, tr0, t2
-800005f0: 03c6825b     	tc.st.mma.acc	a3, tr4, tr0, t3
-800005f4: 005601db     	t.ld	tr5, 0x3(a2)
-800005f8: 0065865b     	t.ld	tr6, 0xc(a1)
-800005fc: 2ae6835b     	tc.st.mma.acc	a3, tr6, tr5, a4
-80000600: 2af6835b     	tc.st.mma.acc	a3, tr6, tr5, a5
-80000604: 007586db     	t.ld	tr7, 0xd(a1)
-80000608: 2b0683db     	tc.st.mma.acc	a3, tr7, tr5, a6
-8000060c: 2b1683db     	tc.st.mma.acc	a3, tr7, tr5, a7
-80000610: 0085875b     	t.ld	tr8, 0xe(a1)
-80000614: 2a56845b     	tc.st.mma.acc	a3, tr8, tr5, t0
-80000618: 2a66845b     	tc.st.mma.acc	a3, tr8, tr5, t1
-8000061c: 009587db     	t.ld	tr9, 0xf(a1)
-80000620: 2a7684db     	tc.st.mma.acc	a3, tr9, tr5, t2
-80000624: 2bc684db     	tc.st.mma.acc	a3, tr9, tr5, t3
+800005d0: 001584db     	t.ld	tr1, 0x9(a1)
+800005d4: 030680db     	tc.st.mma.acc	a3, tr1, tr0, a6
+800005d8: 031680db     	tc.st.mma.acc	a3, tr1, tr0, a7
+800005dc: 0015855b     	t.ld	tr1, 0xa(a1)
+800005e0: 025680db     	tc.st.mma.acc	a3, tr1, tr0, t0
+800005e4: 026680db     	tc.st.mma.acc	a3, tr1, tr0, t1
+800005e8: 001585db     	t.ld	tr1, 0xb(a1)
+800005ec: 027680db     	tc.st.mma.acc	a3, tr1, tr0, t2
+800005f0: 03c680db     	tc.st.mma.acc	a3, tr1, tr0, t3
+800005f4: 000601db     	t.ld	tr0, 0x3(a2)
+800005f8: 0015865b     	t.ld	tr1, 0xc(a1)
+800005fc: 02e680db     	tc.st.mma.acc	a3, tr1, tr0, a4
+80000600: 02f680db     	tc.st.mma.acc	a3, tr1, tr0, a5
+80000604: 001586db     	t.ld	tr1, 0xd(a1)
+80000608: 030680db     	tc.st.mma.acc	a3, tr1, tr0, a6
+8000060c: 031680db     	tc.st.mma.acc	a3, tr1, tr0, a7
+80000610: 0015875b     	t.ld	tr1, 0xe(a1)
+80000614: 025680db     	tc.st.mma.acc	a3, tr1, tr0, t0
+80000618: 026680db     	tc.st.mma.acc	a3, tr1, tr0, t1
+8000061c: 001587db     	t.ld	tr1, 0xf(a1)
+80000620: 027680db     	tc.st.mma.acc	a3, tr1, tr0, t2
+80000624: 03c680db     	tc.st.mma.acc	a3, tr1, tr0, t3
 80000628: 01d585b3     	add	a1, a1, t4
 8000062c: fff50513     	addi	a0, a0, -0x1
 80000630: 01e60633     	add	a2, a2, t5
@@ -427,48 +427,48 @@ Disassembly of section .text:
 80000660: 0af6805b     	tc.st.mma.acc	a3, tr0, tr1, a5
 80000664: 0b06805b     	tc.st.mma.acc	a3, tr0, tr1, a6
 80000668: 0b16805b     	tc.st.mma.acc	a3, tr0, tr1, a7
-8000066c: 002580db     	t.ld	tr2, 0x1(a1)
-80000670: 003600db     	t.ld	tr3, 0x1(a2)
-80000674: 1ae6815b     	tc.st.mma.acc	a3, tr2, tr3, a4
-80000678: 1af6815b     	tc.st.mma.acc	a3, tr2, tr3, a5
-8000067c: 1b06815b     	tc.st.mma.acc	a3, tr2, tr3, a6
-80000680: 1b16815b     	tc.st.mma.acc	a3, tr2, tr3, a7
-80000684: 0045815b     	t.ld	tr4, 0x2(a1)
-80000688: 0056015b     	t.ld	tr5, 0x2(a2)
-8000068c: 2ae6825b     	tc.st.mma.acc	a3, tr4, tr5, a4
-80000690: 2af6825b     	tc.st.mma.acc	a3, tr4, tr5, a5
-80000694: 2b06825b     	tc.st.mma.acc	a3, tr4, tr5, a6
-80000698: 2b16825b     	tc.st.mma.acc	a3, tr4, tr5, a7
-8000069c: 006581db     	t.ld	tr6, 0x3(a1)
-800006a0: 007601db     	t.ld	tr7, 0x3(a2)
-800006a4: 3ae6835b     	tc.st.mma.acc	a3, tr6, tr7, a4
-800006a8: 3af6835b     	tc.st.mma.acc	a3, tr6, tr7, a5
-800006ac: 3b06835b     	tc.st.mma.acc	a3, tr6, tr7, a6
-800006b0: 3b16835b     	tc.st.mma.acc	a3, tr6, tr7, a7
+8000066c: 000580db     	t.ld	tr0, 0x1(a1)
+80000670: 001600db     	t.ld	tr1, 0x1(a2)
+80000674: 0ae6805b     	tc.st.mma.acc	a3, tr0, tr1, a4
+80000678: 0af6805b     	tc.st.mma.acc	a3, tr0, tr1, a5
+8000067c: 0b06805b     	tc.st.mma.acc	a3, tr0, tr1, a6
+80000680: 0b16805b     	tc.st.mma.acc	a3, tr0, tr1, a7
+80000684: 0005815b     	t.ld	tr0, 0x2(a1)
+80000688: 0016015b     	t.ld	tr1, 0x2(a2)
+8000068c: 0ae6805b     	tc.st.mma.acc	a3, tr0, tr1, a4
+80000690: 0af6805b     	tc.st.mma.acc	a3, tr0, tr1, a5
+80000694: 0b06805b     	tc.st.mma.acc	a3, tr0, tr1, a6
+80000698: 0b16805b     	tc.st.mma.acc	a3, tr0, tr1, a7
+8000069c: 000581db     	t.ld	tr0, 0x3(a1)
+800006a0: 001601db     	t.ld	tr1, 0x3(a2)
+800006a4: 0ae6805b     	tc.st.mma.acc	a3, tr0, tr1, a4
+800006a8: 0af6805b     	tc.st.mma.acc	a3, tr0, tr1, a5
+800006ac: 0b06805b     	tc.st.mma.acc	a3, tr0, tr1, a6
+800006b0: 0b16805b     	tc.st.mma.acc	a3, tr0, tr1, a7
 800006b4: 0005825b     	t.ld	tr0, 0x4(a1)
 800006b8: 0016025b     	t.ld	tr1, 0x4(a2)
 800006bc: 0ae6805b     	tc.st.mma.acc	a3, tr0, tr1, a4
 800006c0: 0af6805b     	tc.st.mma.acc	a3, tr0, tr1, a5
 800006c4: 0b06805b     	tc.st.mma.acc	a3, tr0, tr1, a6
 800006c8: 0b16805b     	tc.st.mma.acc	a3, tr0, tr1, a7
-800006cc: 002582db     	t.ld	tr2, 0x5(a1)
-800006d0: 003602db     	t.ld	tr3, 0x5(a2)
-800006d4: 1ae6815b     	tc.st.mma.acc	a3, tr2, tr3, a4
-800006d8: 1af6815b     	tc.st.mma.acc	a3, tr2, tr3, a5
-800006dc: 1b06815b     	tc.st.mma.acc	a3, tr2, tr3, a6
-800006e0: 1b16815b     	tc.st.mma.acc	a3, tr2, tr3, a7
-800006e4: 0045835b     	t.ld	tr4, 0x6(a1)
-800006e8: 0056035b     	t.ld	tr5, 0x6(a2)
-800006ec: 2ae6825b     	tc.st.mma.acc	a3, tr4, tr5, a4
-800006f0: 2af6825b     	tc.st.mma.acc	a3, tr4, tr5, a5
-800006f4: 2b06825b     	tc.st.mma.acc	a3, tr4, tr5, a6
-800006f8: 2b16825b     	tc.st.mma.acc	a3, tr4, tr5, a7
-800006fc: 006583db     	t.ld	tr6, 0x7(a1)
-80000700: 007603db     	t.ld	tr7, 0x7(a2)
-80000704: 3ae6835b     	tc.st.mma.acc	a3, tr6, tr7, a4
-80000708: 3af6835b     	tc.st.mma.acc	a3, tr6, tr7, a5
-8000070c: 3b06835b     	tc.st.mma.acc	a3, tr6, tr7, a6
-80000710: 3b16835b     	tc.st.mma.acc	a3, tr6, tr7, a7
+800006cc: 000582db     	t.ld	tr0, 0x5(a1)
+800006d0: 001602db     	t.ld	tr1, 0x5(a2)
+800006d4: 0ae6805b     	tc.st.mma.acc	a3, tr0, tr1, a4
+800006d8: 0af6805b     	tc.st.mma.acc	a3, tr0, tr1, a5
+800006dc: 0b06805b     	tc.st.mma.acc	a3, tr0, tr1, a6
+800006e0: 0b16805b     	tc.st.mma.acc	a3, tr0, tr1, a7
+800006e4: 0005835b     	t.ld	tr0, 0x6(a1)
+800006e8: 0016035b     	t.ld	tr1, 0x6(a2)
+800006ec: 0ae6805b     	tc.st.mma.acc	a3, tr0, tr1, a4
+800006f0: 0af6805b     	tc.st.mma.acc	a3, tr0, tr1, a5
+800006f4: 0b06805b     	tc.st.mma.acc	a3, tr0, tr1, a6
+800006f8: 0b16805b     	tc.st.mma.acc	a3, tr0, tr1, a7
+800006fc: 000583db     	t.ld	tr0, 0x7(a1)
+80000700: 001603db     	t.ld	tr1, 0x7(a2)
+80000704: 0ae6805b     	tc.st.mma.acc	a3, tr0, tr1, a4
+80000708: 0af6805b     	tc.st.mma.acc	a3, tr0, tr1, a5
+8000070c: 0b06805b     	tc.st.mma.acc	a3, tr0, tr1, a6
+80000710: 0b16805b     	tc.st.mma.acc	a3, tr0, tr1, a7
 80000714: 005585b3     	add	a1, a1, t0
 80000718: fff50513     	addi	a0, a0, -0x1
 8000071c: 00560633     	add	a2, a2, t0
